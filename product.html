@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.google.com/share?selection.family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>VENIA</title>
+
+</head>
+
+<body>
+    <nav class="prod-navbar">
+        <div class="container">
+            <div class="prod-navbar-inner">
+                <div class="prod-navbar-logo">
+                    <a href="javascript:void(0)">VENIA</a>
+                </div>
+
+                <div class="prod-navbar-menu">
+                    <ul>
+                        <li><a href="javascript:void(0)" class="prod-link active">Home</a></li>
+                        <li><a href="javascript:void(0)" class="prod-link">Women</a></li>
+                        <li><a href="javascript:void(0)" class="prod-link">Men</a></li>
+                        <li><a href="javascript:void(0)" class="prod-link">Smart Gear</a></li>
+                        <li><a href="javascript:void(0)" class="prod-link">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div class="prod-navbar-cart-section">
+                    <div class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                    <span>0</span>
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <main>
+        <section class="prod-banner">
+            <div class="prod-banner-left">
+                <h1>Men's <span class="line-break"></span> Outerwear
+                    <span class="divider"></span>
+                </h1>
+
+            </div>
+            <div class="prod-banner-right"></div>
+        </section>
+
+        <section class="product-section">
+            <div class="container">
+
+                <div class="product-section-main">
+                    <div class="product-left">
+                        <div class="breadcrumbs">
+                            <ul>
+                                <li><a href="javascript:void();">Clothing </a>/</li>
+                                <li><a href="javascript:void();=">Men's </a>/</li>
+                                <li><a href="javascript:void();=">Outerwear</a></li>
+                            </ul>
+                        </div>
+                        <h3>Filters</h3>
+                        <div class="categories">
+                            <p>Categories</p>
+
+                            <div class="checkbox-row">
+                                <input type="checkbox" id="jewellery" name="jewellery" value="jewellery">
+                                <label for="jewellery">Jewellery</label>
+                            </div>
+                            <div class="checkbox-row">
+                                <input type="checkbox" id="electronics" name="electronics" value="electronics">
+                                <label for="electronics">Electronics</label>
+                            </div>
+                            <div class="checkbox-row">
+                                <input type="checkbox" id="men" name="men" value="men">
+                                <label for="men">Men's Clothing</label>
+                            </div>
+                            <div class="checkbox-row">
+                                <input type="checkbox" id="women" name="women" value="women">
+                                <label for="women">Women's Clothing</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-right">
+
+                        <!-- loading spinner div-->
+                        <div id="loading-spinner">
+                            <div class="spinner"></div>
+                        </div>
+
+                        <div class="prod-result">
+
+                            <div class="total-result" id="total-count">Results</div>
+
+                            <div class="drop-down-wrap">
+                                <div class="search-wrap">
+                                    <input type="text" id="search-input" placeholder="Search..." class="form-control">
+                                </div>
+                                <div class="price-dropdown">
+
+                                    <!-- sorting tag-->
+                                    <select id="sorting-option" class="form-control">
+                                        <option selected>Sort by Price</option>
+                                        <option value="low-to-high">Low to High</option>
+                                        <option value="high-to-low">High to Low</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- product container -->
+                        <div id="product-container" class="product-list"></div>
+
+                        <div id="load-more-btn">
+                            <button>Load More</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="footer-col">
+                        <h4>Account</h4>
+                        <ul>
+                            <li><a href="javascript:void(0)">Sign in</a></li>
+                            <li><a href="javascript:void(0)">Register</a></li>
+                            <li><a href="javascript:void(0)">Order Status</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="javascript:void(0)">Our Story</a></li>
+                            <li><a href="javascript:void(0)">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Help</h4>
+                        <ul>
+                            <li><a href="javascript:void(0)">Contact Us</a></li>
+                            <li><a href="javascript:void(0)">Order Status</a></li>
+                            <li><a href="javascript:void(0)">Returns</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Follow Us!</h4>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsam ratione odio magnam
+                            quis eaque placeat incidunt id dolorem in.</p>
+                        <ul class="social-media">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="assets/images/instagram.svg" class="img-fluid" title="instagram" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="assets/images/facebook.svg" class="img-fluid" title="facebook" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="assets/images/twitter.svg" class="img-fluid" title="twitter" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+
+</html>
