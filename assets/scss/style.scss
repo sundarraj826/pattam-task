@@ -2,6 +2,9 @@
 @import '_mixins.scss';
 @import '_functions.scss';
 
+*{
+    box-sizing: border-box;
+}
 
 body {
     font-family: $primary-font-family;
@@ -14,7 +17,9 @@ body {
     width: 1200px;
     margin: 0 auto;
 }
-
+#hamburger-menu{
+    display: none;
+}
 .prod-navbar {
     background-color: $primary-brand-cl;
     color: $secondary-cl;
@@ -36,6 +41,7 @@ body {
 
     &-menu {
         @include textCenterAlign;
+        order: 2;
 
         ul {
             @include ulRemoveStyle;
@@ -69,6 +75,7 @@ body {
 
     &-cart-section {
         position: relative;
+        order: 3;
 
         .cart-icon {
             font-size: 20px;
@@ -122,7 +129,8 @@ body {
     &-right {
         width: 65%;
         height: 100%;
-        background: yellow;
+        background: #f3f3f3;
+        order: 2;
     }
 }
 
@@ -136,12 +144,15 @@ body {
 
 .product-section-main {
     width: 100%;
-    display: flex;
+    display: block;
+    clear: both;
+    overflow: hidden;
 }
 
 .product-left {
     width: 25%;
-    margin: 20px 30px 0 20px;
+    padding: 20px 20px 0 20px;
+    float: left;
 
     .categories {
         border-bottom: 1px solid #ccc;
@@ -157,6 +168,7 @@ body {
 .product-right {
     width: 75%;
     padding: 20px 0 0;
+    float: left;
 }
 
 #product-container {
@@ -242,19 +254,23 @@ body {
         cursor: pointer;
     }
 }
+
 .breadcrumbs {
     ul {
         display: flex;
         @include ulRemoveStyle;
     }
-    li{
+
+    li {
         padding-right: 5px;
     }
-    a{
+
+    a {
         text-decoration: none;
         color: $primary-cl;
     }
 }
+
 .prod-result {
     display: flex;
     justify-content: space-between;
@@ -266,20 +282,24 @@ body {
         font-weight: bold;
     }
 
-    .drop-down-wrap{
+    .drop-down-wrap {
         display: flex;
     }
+
     .search-wrap {
         margin-right: 10px;
     }
 }
+
 .form-control {
+    width: 100%;
     border: 1px solid #B5B7BC;
     border-radius: 3px;
     height: 35px;
     padding: 7px;
     box-sizing: border-box;
 }
+
 .footer-top {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -287,29 +307,76 @@ body {
     .footer-inner {
         display: flex;
     }
+
     .footer-col {
         width: 25%;
         margin: 20px 0 15px;
-        h4{
+
+        h4 {
             margin: 0 0 10px;
         }
 
-        ul{
-           @include ulRemoveStyle;
+        ul {
+            @include ulRemoveStyle;
         }
-        li{
+
+        li {
             padding-bottom: 3px;
         }
-        a{
+
+        a {
             text-decoration: none;
-            color: $primary-cl;
+            color: #545D63;
         }
     }
-    .social-media{
+
+    .social-media {
         @include ulRemoveStyle;
         display: flex;
-        li{
+
+        li {
             padding: 0 10px;
         }
     }
+}
+
+.footer-info {
+    padding: 15px 0;
+
+    &-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-cont {
+        a {
+            text-decoration: none;
+            color: $primary-cl;
+            font-size: 22px;
+        }
+    }
+
+    &-col {
+        ul {
+            @include ulRemoveStyle;
+            display: flex;
+        }
+
+        li {
+            padding: 0 10px;
+        }
+
+        a {
+            color: $primary-cl;
+        }
+
+        &:first-child{
+            order:3;
+        }
+        &:nth-child(2){
+            order: 2;
+        }
+    }
+
 }

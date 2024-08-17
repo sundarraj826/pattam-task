@@ -1,0 +1,131 @@
+/*********** Tablet View ************/
+@media (min-width: 768px) and (max-width: 992px) {
+  .product-left {
+    width: 35%;
+  }
+  .product-right {
+    width: 65%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+/********* Small Device **********/
+@media (min-width: 1280px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+/****** Mobile media query ******/
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .prod-navbar {
+    position: relative;
+  }
+  .prod-navbar-menu {
+    position: absolute;
+    top: 80px;
+    display: block;
+    width: 100%;
+    left: 0;
+    background: #000;
+    z-index: 99;
+    height: auto;
+    display: none;
+  }
+  .prod-navbar-menu.active {
+    display: block;
+  }
+  .prod-navbar-menu ul {
+    display: block;
+  }
+  .prod-navbar-menu ul li {
+    display: block;
+    padding: 15px;
+    height: auto;
+  }
+  .prod-navbar-menu li .prod-link {
+    padding-bottom: 15px;
+  }
+  #hamburger-menu {
+    display: block;
+    width: 25px;
+  }
+  #hamburger-menu span {
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .prod-banner {
+    display: block;
+    height: auto;
+  }
+  .prod-banner-left {
+    width: calc(100% - 40px);
+    margin: -80px auto 0;
+  }
+  .prod-banner-right {
+    width: 100%;
+    height: 300px;
+  }
+  .product-section-main {
+    display: block;
+  }
+  .product-left {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+  }
+  .product-right {
+    width: 100%;
+  }
+  .prod-result {
+    display: block;
+    padding: 0;
+  }
+  .prod-result .search-wrap {
+    padding: 0;
+    margin: 0 0 15px;
+  }
+  .price-dropdown {
+    width: 100%;
+  }
+  #sorting-option {
+    width: 100%;
+  }
+  #product-container .product-col {
+    width: 50%;
+  }
+  .footer-top .footer-inner {
+    display: block;
+  }
+  .footer-top .footer-col {
+    width: 100%;
+  }
+  .footer-info-inner {
+    display: block;
+    text-align: center;
+  }
+  .footer-info-col ul {
+    justify-content: center;
+  }
+  .footer-info-col:first-child,
+  .footer-info-col:nth-child(2) {
+    margin-bottom: 15px;
+  }
+  .prod-result .drop-down-wrap {
+    display: block;
+  }
+}
